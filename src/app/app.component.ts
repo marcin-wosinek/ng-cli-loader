@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import template from './app.component.html';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template,
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'ng-cli-loader';
