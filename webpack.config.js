@@ -1,4 +1,7 @@
 module.exports = (config, options) => {
-  console.log("webpack config test");
+  config.module.rules.push({
+    test: /\.html?$/,
+    loader: "html-loader",
+  });
   return config;
 };
