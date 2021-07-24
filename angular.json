@@ -15,7 +15,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist/ng-cli-loader",
             "index": "src/index.html",
@@ -29,7 +29,11 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "baseHref": "./",
+            "customWebpackConfig": {
+              "path": "./webpack.config.js"
+            }
           },
           "configurations": {
             "production": {
