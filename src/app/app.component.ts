@@ -3,7 +3,7 @@ import template from './app.component.html';
 
 @Component({
   selector: 'app-root',
-  template,
+  template: `${template}`,
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
